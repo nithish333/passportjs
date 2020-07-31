@@ -1,0 +1,9 @@
+<nav class="navbar">
+    <a href="/">Home</a>
+    {{#if user}}
+    <a href="/auth/logout">Logout</a>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+</nav>
+<h1 class="title">{{title}}</h1>
